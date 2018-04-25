@@ -1,0 +1,61 @@
+<!--pages/add/add.wxml-->
+<view class='container'>
+  <view class='add-top'>
+    <view class='title-box'>
+      <input class='title' type='text' placeholder='请输入日程主题'></input>
+    </view>
+    <view class='start-time-box'>
+      <view class='start-time-title'>开始时间</view>
+      <view class='start-time'>
+        <picker mode="date" value="{{date1}}" start="" end="" bindchange="bindDateChange1">
+          <view class="picker-date">
+            {{date1}}
+          </view>
+        </picker>  
+        <view class='time-date'>|</view>
+        <picker mode="time" value="{{time1}}" start="" end="" bindchange="bindTimeChange1">  
+            <view class="picker-time">  
+            {{time1}}  
+            </view>  
+          </picker>  
+      </view>
+    </view>
+
+    <view class='end-time-box'>
+      <view class='end-time-title'>结束时间</view>
+      <view class='end-time'>
+        <picker mode="date" value="{{date2}}" start="" end="" bindchange="bindDateChange2">
+        <view class="picker-date">
+          {{date2}}
+        </view>
+        </picker>  
+        <view class='time-date'>|</view>
+        <picker mode="time" value="{{time2}}" start="" end="" bindchange="bindTimeChange2">  
+            <view class="picker-time">  
+            {{time2}}  
+            </view>  
+          </picker>  
+          </view>
+    </view>
+    <view class='all-date-box'>
+    <view class='all-date-title'>全天</view>
+    <switch class='is-all-date' bindchange=''></switch>
+    </view>
+  </view>
+
+  <view class='add-center'>
+     <input class='place' type='text' placeholder='日程地点(选填）'></input>
+  </view>
+
+  <view class='add-bottom'>
+   <block wx:for="{{addList}}">
+    <view class='list-item' data-id='{{index}}'>
+      <view class='list-item-text'>{{item.text}}</view>
+      <view class='list-item-content'>{{item.content}}</view>
+      <view class='list-item-img'>{{item.next}}</view>
+    </view>
+  </block>
+  </view>
+
+  <button class='preserve' type="primary" size="default"> 保存 </button>
+</view>

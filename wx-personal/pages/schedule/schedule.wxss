@@ -1,0 +1,63 @@
+/* pages/schedule/schedule.wxss */
+
+.today{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+
+.today-time{
+  padding: 0 20px;
+}
+
+.today-content{
+  display: flex;
+  align-items: center;
+  background: #e7f0ff;
+  width: 80%;
+  border: 1px solid #b0c3ff;
+  min-height: 40px;
+  color:#808080;
+  text-indent: 10px; 
+}
+.schdule{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.schdule-date{
+  text-align: center;
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+.schdule-item{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.schdule-time{
+  padding: 0 20px;
+}
+
+.schdule-content{
+  display: flex;
+  align-items: center;
+  background: #ff9900;
+  width: 80%;
+  border: 1px solid #fff;
+  text-indent: 10px;
+  color: #fff;
+}
+
+
+
+

@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/schedule/schedule",
+    "pages/logs/logs",
+    "pages/add/add",
+    "pages/my/my"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "日程",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "black",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/schedule/schedule",
+        "text": "日程",
+        "iconPath": "pages/images/schedule.png",
+        "selectedIconPath": "pages/images/schedule1.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "创建",
+        "iconPath": "pages/images/add.png",
+        "selectedIconPath": "pages/images/add.png"
+      },
+     
+      {
+        "pagePath": "pages/my/my",
+        "text": "我",
+        "iconPath": "pages/images/my.png",
+        "selectedIconPath": "pages/images/my1.png"
+      }
+    ]
+  }
+}

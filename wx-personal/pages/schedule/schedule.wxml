@@ -1,0 +1,33 @@
+<!--pages/schedule/schedule.wxml-->
+
+<view class='container'>
+  <view class='today'>
+    <view class='today-time'>
+      <view class=''>25</view>
+      <view class=''>周三</view>
+    </view>
+    
+      <view class='today-content' bindtap='add'>今天无日程，点击创建</view>
+  
+  </view>
+
+<view class='schdule'>
+  <view class='schdule-date'>2017年12月</view>
+
+  <view class='schdule-item'>
+    <view class='schdule-time'>
+      <view class=''>25</view>
+      <view class=''>周三</view>
+    </view>
+    <view class='schdule-content'>123456789</view>
+  </view>
+  <view class='schdule-item'>
+      <view class='schdule-time'>
+        <view class=''>25</view>
+        <view class=''>周三</view>
+      </view>
+      <view class='schdule-content'>123456789</view>
+    </view>
+</view>
+
+</view>
